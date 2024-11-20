@@ -1,0 +1,603 @@
+{"level":"info","message":"Start server at http://127.0.0.1:3000/","timestamp":"2024-11-18T11:24:46.381Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T11:24:50.928Z"}
+{"level":"http","message":"/static/index.html","timestamp":"2024-11-18T11:24:50.942Z"}
+{"level":"http","message":"/pr%C3%A9nom/?valeur=%22Fran%C3%A7ois%22","timestamp":"2024-11-18T11:26:01.319Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T11:26:01.337Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = '\"François\"' LIMIT 1;","timestamp":"2024-11-18T11:26:01.344Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T11:26:01.380Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:35:40.465Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:35:40.495Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:35:40.497Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:38:03.232Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:38:03.265Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:38:03.267Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:38:37.820Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:38:37.850Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:38:37.851Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:38:48.394Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:38:48.425Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:38:48.426Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:46:59.387Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:46:59.353Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:46:59.422Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:46:59.424Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:46:59.474Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:46:59.480Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:46:59.483Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:46:59.485Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:46:59.487Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:46:59.490Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:46:59.493Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:46:59.501Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:46:59.503Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:46:59.505Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:46:59.509Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:46:59.517Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:46:59.521Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:46:59.524Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:46:59.526Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:46:59.530Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:46:59.533Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:46:59.543Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:46:59.549Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:46:59.567Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:46:59.578Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:46:59.579Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:47:29.382Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:47:29.415Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:47:29.417Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:47:29.410Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:47:29.533Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:47:29.538Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:47:29.541Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:47:29.543Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:47:29.546Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:47:29.548Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:47:29.551Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:47:29.556Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:47:29.559Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:47:29.561Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:47:29.564Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:47:29.578Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:47:29.581Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:47:29.585Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:47:29.587Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:47:29.591Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:47:29.594Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:47:29.604Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:47:29.613Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:47:29.630Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:47:29.640Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:47:29.642Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:49:09.726Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:49:09.759Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:49:09.763Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:49:09.759Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:49:09.879Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:49:09.883Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:49:09.888Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:49:09.890Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:49:09.893Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:49:09.896Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:49:09.899Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:49:09.904Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:49:09.906Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:49:09.908Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:49:09.912Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:49:09.924Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:49:09.928Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:49:09.931Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:49:09.932Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:49:09.935Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:49:09.939Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:49:09.948Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:49:09.953Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:49:09.969Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:49:09.980Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:49:09.981Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:50:11.499Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:50:11.526Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:50:11.528Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:50:12.033Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:50:12.129Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:50:12.134Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:50:12.138Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:50:12.139Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:50:12.141Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:50:12.144Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:50:12.147Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:50:12.150Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:50:12.152Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:50:12.154Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:50:12.163Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:50:12.166Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:50:12.170Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:50:12.173Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:50:12.175Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:50:12.178Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:50:12.181Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:50:12.190Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:50:12.195Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:50:12.205Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:50:12.213Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:50:12.214Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:50:50.926Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:50:51.024Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:50:51.028Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:50:51.030Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:50:51.032Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:50:51.034Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:50:51.036Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:50:51.039Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:50:51.042Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:50:51.045Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:50:51.047Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:50:51.050Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:50:51.056Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:50:51.060Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:50:51.062Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:50:51.064Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:50:51.067Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:50:51.070Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:50:51.078Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:50:51.083Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:50:51.099Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:50:51.108Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:50:51.109Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:50:51.638Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:50:51.652Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:50:51.654Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:52:14.230Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:52:14.272Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:52:14.275Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:52:14.277Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:52:14.415Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:52:14.419Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:52:14.423Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:52:14.425Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:52:14.427Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:52:14.431Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:52:14.434Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:52:14.439Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:52:14.441Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:52:14.444Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:52:14.447Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:52:14.461Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:52:14.464Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:52:14.467Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:52:14.469Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:52:14.472Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:52:14.475Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:52:14.484Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:52:14.490Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:52:14.509Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:52:14.521Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:52:14.522Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:52:20.211Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:52:20.177Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:52:20.244Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:52:20.247Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:52:20.295Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:52:20.301Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:52:20.305Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:52:20.307Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:52:20.310Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:52:20.312Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:52:20.315Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:52:20.319Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:52:20.321Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:52:20.324Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:52:20.327Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:52:20.340Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:52:20.344Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:52:20.347Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:52:20.350Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:52:20.354Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:52:20.358Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:52:20.368Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:52:20.373Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:52:20.390Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:52:20.400Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:52:20.401Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:53:34.707Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:53:34.737Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:53:34.739Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:53:34.751Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:53:34.868Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:53:34.875Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:53:34.878Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:53:34.880Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:53:34.882Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:53:34.884Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:53:34.887Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:53:34.892Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:53:34.895Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:53:34.897Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:53:34.901Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:53:34.913Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:53:34.917Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:53:34.920Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:53:34.922Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:53:34.925Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:53:34.929Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:53:34.938Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:53:34.944Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:53:34.962Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:53:34.975Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:53:34.977Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:53:54.344Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:53:54.396Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:53:54.404Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:53:54.371Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:53:54.559Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:53:54.571Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:53:54.578Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:53:54.581Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:53:54.584Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:53:54.589Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:53:54.607Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:53:54.619Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:53:54.624Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:53:54.628Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:53:54.635Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:53:54.660Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:53:54.666Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:53:54.671Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:53:54.676Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:53:54.688Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:53:54.694Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:53:54.719Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:53:54.725Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:53:54.745Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:53:54.758Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:53:54.759Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:55:32.272Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:55:32.307Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:55:32.308Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:55:32.301Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:55:32.414Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:55:32.418Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:55:32.422Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:55:32.424Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:55:32.427Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:55:32.430Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:55:32.433Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:55:32.438Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:55:32.440Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:55:32.443Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:55:32.447Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:55:32.460Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:55:32.464Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:55:32.467Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:55:32.469Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:55:32.473Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:55:32.476Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:55:32.485Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:55:32.489Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:55:32.506Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:55:32.516Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:55:32.518Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T16:55:55.222Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:55:55.193Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T16:55:55.257Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T16:55:55.259Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:55:55.321Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T16:55:55.328Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:55:55.334Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:55:55.337Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T16:55:55.340Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:55:55.343Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:55:55.348Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:55:55.355Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:55:55.359Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:55:55.364Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:55:55.367Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T16:55:55.385Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:55:55.388Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T16:55:55.391Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T16:55:55.393Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T16:55:55.396Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T16:55:55.399Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T16:55:55.408Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T16:55:55.415Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T16:55:55.447Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T16:55:55.460Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T16:55:55.461Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:12:49.524Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:12:49.560Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:12:49.562Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:12:49.559Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:12:49.680Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:12:49.687Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:12:49.691Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:12:49.692Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:12:49.695Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:12:49.697Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:12:49.700Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:12:49.706Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:12:49.708Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:12:49.710Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:12:49.714Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:12:49.731Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:12:49.737Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:12:49.740Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:12:49.742Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:12:49.747Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:12:49.750Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:12:49.759Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:12:49.766Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:12:49.789Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:12:49.806Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:12:49.810Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:13:42.891Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:13:42.891Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:13:42.925Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:13:42.927Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:13:42.933Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:13:42.935Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:13:42.930Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:13:43.064Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:13:43.070Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:13:43.073Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:13:43.075Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:13:43.077Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:13:43.079Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:13:43.083Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:13:43.088Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:13:43.090Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:13:43.093Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:13:43.096Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:13:43.109Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:13:43.113Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:13:43.116Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:13:43.118Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:13:43.121Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:13:43.125Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:13:43.133Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:13:43.138Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:13:43.155Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:13:43.165Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:13:43.166Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:14:04.695Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:14:04.732Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:14:04.734Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:14:04.801Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:04.755Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:14:04.853Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:14:04.855Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:04.901Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:14:04.907Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:04.910Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:04.911Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:14:04.914Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:04.916Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:04.919Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:14:04.926Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:04.928Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:04.931Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:14:04.936Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:04.948Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:04.952Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:14:04.955Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:04.957Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:04.961Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:14:04.965Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:14:04.975Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:14:04.982Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:14:05.007Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:14:05.018Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:14:05.020Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:14:28.265Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:14:28.299Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:14:28.300Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:28.303Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:28.443Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:14:28.449Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:28.455Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:28.458Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:14:28.461Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:14:28.455Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:28.465Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:28.470Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:14:28.474Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:28.477Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:28.481Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:14:28.485Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:14:28.491Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:14:28.492Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:28.498Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:28.503Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:14:28.506Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:28.508Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:28.513Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:14:28.517Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:14:28.527Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:14:28.533Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:14:28.551Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:14:28.562Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:14:28.563Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:14:39.990Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:39.970Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:14:40.027Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:14:40.029Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:40.115Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:14:40.120Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:40.124Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:40.127Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:14:40.129Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:40.132Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:40.136Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:14:40.144Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:40.148Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:40.151Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:14:40.156Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:14:40.172Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:40.175Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:14:40.178Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:14:40.180Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:14:40.184Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:14:40.187Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:14:40.203Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:14:40.195Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:14:40.214Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:14:40.239Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:14:40.240Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:14:40.241Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:14:40.251Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:14:40.253Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:16:00.204Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:16:00.242Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:16:00.244Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:16:00.244Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:16:00.379Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:16:00.387Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:16:00.390Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:16:00.392Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:16:00.395Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:16:00.397Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:16:00.407Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:16:00.418Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:16:00.424Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:16:00.432Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:16:00.438Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:16:00.448Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:16:00.453Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:16:00.457Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:16:00.459Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:16:00.464Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:16:00.469Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:16:00.483Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:16:00.489Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:16:00.512Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:16:00.525Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:16:00.526Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:16:33.817Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:16:33.852Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:16:33.854Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:16:33.861Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:16:33.994Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:16:33.999Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:16:34.005Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:16:34.009Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:16:34.012Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:16:34.015Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:16:34.018Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:16:34.023Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:16:34.026Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:16:34.030Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:16:34.034Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:16:34.048Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:16:34.052Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:16:34.055Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:16:34.057Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:16:34.061Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:16:34.064Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:16:34.073Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:16:34.079Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:16:34.099Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:16:34.115Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:16:34.117Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:49:35.413Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:49:35.384Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:49:35.457Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:49:35.459Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:49:35.534Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:49:35.540Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:49:35.543Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:49:35.546Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:49:35.548Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:49:35.552Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:49:35.556Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:49:35.562Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:49:35.565Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:49:35.567Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:49:35.570Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:49:35.586Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:49:35.590Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:49:35.593Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:49:35.594Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:49:35.598Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:49:35.603Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:49:35.617Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:49:35.624Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:49:35.649Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:49:35.664Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:49:35.666Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:49:55.104Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:49:55.143Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:49:55.145Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:49:55.149Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:49:55.279Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:49:55.283Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:49:55.288Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:49:55.290Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:49:55.293Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:49:55.296Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:49:55.300Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:49:55.305Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:49:55.307Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:49:55.310Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:49:55.313Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:49:55.330Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:49:55.334Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:49:55.338Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:49:55.340Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:49:55.343Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:49:55.346Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:49:55.355Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:49:55.361Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:49:55.391Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:49:55.405Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:49:55.407Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T17:59:18.787Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T17:59:18.850Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T17:59:18.853Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:59:18.807Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:59:18.980Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T17:59:18.986Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:59:18.992Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:59:18.995Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T17:59:18.998Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:59:19.001Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:59:19.007Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:59:19.016Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:59:19.021Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:59:19.025Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:59:19.028Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T17:59:19.037Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:59:19.051Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T17:59:19.054Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T17:59:19.057Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T17:59:19.062Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T17:59:19.067Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T17:59:19.080Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T17:59:19.086Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T17:59:19.107Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T17:59:19.125Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T17:59:19.127Z"}
+{"level":"http","message":"/","timestamp":"2024-11-18T18:05:00.511Z"}
+{"level":"http","message":"/not%20here","timestamp":"2024-11-18T18:05:00.558Z"}
+{"level":"info","message":"et c'est le 404 : /not%20here","timestamp":"2024-11-18T18:05:00.561Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T18:05:00.573Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T18:05:00.691Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = OFF","timestamp":"2024-11-18T18:05:00.696Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T18:05:00.699Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T18:05:00.701Z"}
+{"level":"info","message":"Executing (default): PRAGMA foreign_keys = ON","timestamp":"2024-11-18T18:05:00.704Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T18:05:00.707Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T18:05:00.715Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T18:05:00.722Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T18:05:00.727Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T18:05:00.732Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T18:05:00.743Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Prénoms`;","timestamp":"2024-11-18T18:05:00.758Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Prénoms` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `prénom` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T18:05:00.763Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Prénoms`)","timestamp":"2024-11-18T18:05:00.767Z"}
+{"level":"info","message":"Executing (default): DROP TABLE IF EXISTS `Significations`;","timestamp":"2024-11-18T18:05:00.769Z"}
+{"level":"info","message":"Executing (default): CREATE TABLE IF NOT EXISTS `Significations` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `message` VARCHAR(255) NOT NULL, `nombre` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);","timestamp":"2024-11-18T18:05:00.774Z"}
+{"level":"info","message":"Executing (default): PRAGMA INDEX_LIST(`Significations`)","timestamp":"2024-11-18T18:05:00.777Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Prénoms` (`id`,`prénom`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3);","timestamp":"2024-11-18T18:05:00.788Z"}
+{"level":"info","message":"Executing (default): INSERT INTO `Significations` (`id`,`message`,`nombre`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4);","timestamp":"2024-11-18T18:05:00.794Z"}
+{"level":"http","message":"/pr%C3%A9nom?valeur=Carole","timestamp":"2024-11-18T18:05:00.815Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `prénom`, `createdAt`, `updatedAt` FROM `Prénoms` AS `Prénoms` WHERE `Prénoms`.`prénom` = 'Carole' LIMIT 1;","timestamp":"2024-11-18T18:05:00.826Z"}
+{"level":"info","message":"Executing (default): SELECT `id`, `message`, `nombre`, `createdAt`, `updatedAt` FROM `Significations` AS `Signification` WHERE `Signification`.`nombre` = 4 LIMIT 1;","timestamp":"2024-11-18T18:05:00.827Z"}

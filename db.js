@@ -3,42 +3,34 @@ import { Sequelize, DataTypes } from 'sequelize';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
+import { logger } from './logger.js';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+let env = process.env.NODE_ENV || 'development';
+
+let storage;
+
+if (env === "test") {
+  storage = ":memory:"
+} else {
+  storage = path.join(__dirname, 'db.sqlite')
+}
 
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: path.join(__dirname, 'db.sqlite')
+  storage: storage,
+  logging: (msg) => logger.info(msg),
 });
 
-const Signification = sequelize.define('Signification', {
-    message: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    nombre: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
-}, {
-    // Other model options go here
-});
-
-const Prénoms = sequelize.define('Prénoms', {
-    prénom: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-}, {
-    // Other model options go here
-});
-
+import signification from "./models/signification.js"
+import prénoms from "./models/prénoms.js"
 
 export default {
     sequelize: sequelize,
     model: {
-        Signification: Signification,
-        Prénoms: Prénoms,
+        Signification: signification(sequelize),
+        Prénoms: prénoms(sequelize),
     }
 }
